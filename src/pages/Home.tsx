@@ -1,9 +1,19 @@
+'use client'
+
 import React from 'react';
+import Navbar from '@/components/Navbar';
+import Main from '@/components/Main';
+import { Container, StyledHomeContainer } from '@/styles/home/HomeStyle';
 
 const Home = () => {
     return (
-        <main>
-            <div>Hello world from Home</div>
-        </main>
+        <Container>
+            <StyledHomeContainer>
+                <Navbar />
+                <Main />
+            </StyledHomeContainer>
+        </Container>
     );
 }
+
+export default Home;

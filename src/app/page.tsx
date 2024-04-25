@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Home from '@/pages/Home';
 
-export default function Home() {
+export default function MainPage() {
   return (
     <main>
-        <div>Hello world</div>
+        <Home />
     </main>
   );
 }
