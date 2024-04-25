@@ -1,9 +1,7 @@
 import { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import StyledComponentsRegistry from '../lib/registry'
+import GlobalStyle from '@/styles/GlobalStyle';
 
 export const metadata: Metadata = {
   title: "Nhan Nguyen",
@@ -16,8 +14,12 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <html>
+        <body>
+            <GlobalStyle />
+            <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        </body>
+      </html>
   );
 }
+
