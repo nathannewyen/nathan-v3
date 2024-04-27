@@ -1,24 +1,83 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 
 const StyledProjectContainer = styled.div`
 `;
 
 const StyledOrderedList = styled.ol`
+  list-style-type: none;
 `;
 
-const StyledProjectNav = styled.nav`
+const StyledProjectSection = styled.div`
+  position: relative;
+  display: grid;
+  padding-bottom: 1rem;
+  transition: all;
+  grid-template-columns: repeat(8 ,minmax(0, 1fr));
+  gap: 8px;
+
+  @media (min-width: 768px) {
+    gap: 4px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:hover ul {
+    opacity: 0.5;
+  }
 `;
 
 const StyledList = styled.ul`
+  padding-left: 0;
 `;
 
 const StyledListItem = styled.li`
+  margin-bottom: 3rem;
+  list-style-type: none;
 `;
 
-const StyledProjectTime = styled.div`
+const StyledInnerListItem = styled.li`
+    margin-top: 0.5rem;
+    list-style-type: none;
+`;
+
+const StyledProjectTime = styled.header`
+  position: relative;
+  z-index: 10;
+  margin-bottom: 2px;
+  margin-top: 1px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #4a5568;
+
+  @media (min-width: 640px) {
+    grid-column: span 2 / auto;
+  }
 `;
 
 const StyledWorkTitle = styled.div`
+  position: relative;
+  z-index: 10;
+
+  @media (min-width: 640px) {
+    grid-column: span 6 / auto;
+  }
 `;
 
-export { StyledProjectContainer, StyledOrderedList, StyledProjectNav, StyledList, StyledListItem, StyledProjectTime, StyledWorkTitle };
+const StyledListLink = styled(Link)`
+`;
+
+const StyledListTech = styled.ul`
+    margin-top: 0.5rem;
+    padding-left: 0;
+`;
+
+const StyledTechItem = styled.li`
+    list-style-type: none;
+`;
+
+export { StyledProjectContainer, StyledOrderedList, StyledProjectSection, StyledList, StyledListItem, StyledInnerListItem,StyledProjectTime, StyledWorkTitle, StyledListLink, StyledListTech, StyledTechItem };
