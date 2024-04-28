@@ -19,14 +19,6 @@ const StyledProjectSection = styled.div`
   @media (min-width: 768px) {
     gap: 4px;
   }
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &:hover ul {
-    opacity: 0.5;
-  }
 `;
 
 const StyledList = styled.ul`
@@ -72,12 +64,28 @@ const StyledListLink = styled(Link)`
 `;
 
 const StyledListTech = styled.ul`
-    margin-top: 0.5rem;
-    padding-left: 0;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
 `;
 
 const StyledTechItem = styled.li`
     list-style-type: none;
+    padding: 0;
+  margin-right: 0.375rem;
 `;
 
-export { StyledProjectContainer, StyledOrderedList, StyledProjectSection, StyledList, StyledListItem, StyledInnerListItem,StyledProjectTime, StyledWorkTitle, StyledListLink, StyledListTech, StyledTechItem };
+const StyledTechText = styled.div`
+  display: flex;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: rgba(56, 178, 172, 0.1);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #5EEAD4;
+`
+
+export { StyledProjectContainer, StyledOrderedList, StyledProjectSection, StyledList, StyledListItem, StyledInnerListItem,StyledProjectTime, StyledWorkTitle, StyledListLink, StyledListTech, StyledTechItem, StyledTechText };
