@@ -6,6 +6,7 @@ const StyledProjectContainer = styled.div`
 
 const StyledOrderedList = styled.ol`
   list-style-type: none;
+  padding: 0;
 `;
 
 const StyledProjectSection = styled.div`
@@ -73,7 +74,8 @@ const StyledListTech = styled.ul`
 const StyledTechItem = styled.li`
     list-style-type: none;
     padding: 0;
-  margin-right: 0.375rem;
+    margin-top: 0.5rem;
+    margin-right: 0.375rem;
 `;
 
 const StyledTechText = styled.div`
