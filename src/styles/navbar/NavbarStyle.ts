@@ -15,15 +15,14 @@ const StyledHead = styled.div`
 
 const StyledNavbarComponent = styled.header`
   @media (min-width: 1024px) {
-    position: sticky;
-    top: 0;
-    display: flex;
-    max-height: 100vh;
-    width: 50%;
-    flex-direction: column;
+    padding: 6rem 0;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    flex-direction: column;
+    width: 50%;
+    max-height: 100vh;
+    display: flex;
+    top: 0;
+    position: sticky;
   }
 `;
 

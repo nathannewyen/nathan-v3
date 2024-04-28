@@ -1,8 +1,9 @@
 'use client'
 
 import React from 'react';
-import Navbar from '@/components/Navbar';
-import Main from '@/components/Main';
+import Navbar from '@components/Navbar';
+import Main from '@components/Main';
+import Button from '@/components/Button/Button';
 import { Container, StyledHomeContainer } from '@/styles/home/HomeStyle';
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
             <StyledHomeContainer>
                 <Navbar />
                 <Main />
+                <Button />
             </StyledHomeContainer>
         </Container>
     );
