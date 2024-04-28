@@ -10,10 +10,10 @@ const StyledSubHeader = styled.div`
   margin-top: 1rem;
 `;
 
-const StyledHeader = styled.header`
+const StyledHead = styled.div`
 `;
 
-const StyledNavbarComponent = styled.div`
+const StyledNavbarComponent = styled.header`
   @media (min-width: 1024px) {
     position: sticky;
     top: 0;
@@ -54,4 +54,16 @@ const StyledListLink = styled(Link)`
     text-transform: uppercase;
 `;
 
-export { StyledDiv, StyledHeader,StyledSubHeader,  StyledNav, StyledLink, StyledList, StyledListItem, StyledListLink, StyledNavbarComponent };
+const StyledSocialList = styled.ul`
+  position: fixed; // or you can use 'sticky'
+  bottom: 0;
+  right: 0;
+`
+
+const StyledSocialIcon = styled.li`
+`
+
+const StyledSocialLink = styled(Link)`
+`
+
+export { StyledDiv, StyledHead ,StyledSubHeader,  StyledNav, StyledLink, StyledList, StyledListItem, StyledListLink, StyledNavbarComponent, StyledSocialLink, StyledSocialIcon, StyledSocialList };
