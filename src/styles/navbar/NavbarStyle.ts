@@ -14,6 +14,17 @@ const StyledHeader = styled.header`
 `;
 
 const StyledNavbarComponent = styled.div`
+  @media (min-width: 1024px) {
+    position: sticky;
+    top: 0;
+    display: flex;
+    max-height: 100vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 `;
 
 const StyledLink = styled(Link)`

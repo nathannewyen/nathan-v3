@@ -1,4 +1,4 @@
-export interface Project {
+export interface Work {
     year: string;
     role: string;
     description: string;

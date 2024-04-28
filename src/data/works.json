@@ -1,6 +1,6 @@
 [
   {
-    "year": "2024",
+    "year": "2024 - Present",
     "role": "Software Engineer",
     "company": "Trade Aries",
     "location": "Remote",
@@ -8,7 +8,7 @@
     "technologies": ["Vue.js", "JavaScript", "TradingView API", "TradeStation API"]
   },
   {
-    "year": "February 2023 - Present",
+    "year": "2023 — Present",
     "role": "Software Engineer II",
     "company": "JPMorgan Chase",
     "location": "Atlanta, GA",
@@ -16,7 +16,7 @@
     "technologies": ["ReactJS", "Redux", "Java", "Spring Boot", "TypeScript", "GraphQL", "AWS", "Jest", "CI/CD tools"]
   },
   {
-    "year": "March 2022 - February 2023",
+    "year": "2022 — 2023",
     "role": "Software Engineer",
     "company": "Hawk Ridge System",
     "location": "Remote",
@@ -24,7 +24,7 @@
     "technologies": ["PWA", "React", "TailwindCSS", "Material-UI", "CircleCI"]
   },
   {
-    "year": "June 2022 - December 2022",
+    "year": "June — Dec 2022",
     "role": "Mobile Developer",
     "company": "Noorisher",
     "location": "Remote",
@@ -32,7 +32,7 @@
     "technologies": ["React Native", "AWS", "AWS Amplify", "Jest", "Detox"]
   },
   {
-    "year": "February 2021 - March 2022",
+    "year": "2021 — 2022",
     "role": "Software Engineer",
     "company": "Collaborative Mind",
     "location": "Remote",
@@ -40,7 +40,7 @@
     "technologies": ["JavaScript", "TypeScript", "React", "Node.js", "GraphQL", "Apollo", "Redis"]
   },
   {
-    "year": "July 2019 - December 2020",
+    "year": "2019 — 2020",
     "role": "UI Engineer",
     "company": "Namma",
     "location": "Remote",

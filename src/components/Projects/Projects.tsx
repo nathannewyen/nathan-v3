@@ -1,6 +1,6 @@
 import React from "react";
-import projectsData from "@data/projects.json";
-import { Project } from "@/types/project.type";
+import workHistory from "@data/works.json";
+import { Work } from "@/types/project.type";
 import {
     StyledProjectContainer,
     StyledOrderedList,
@@ -16,23 +16,23 @@ import {
 } from "@styles/projects/ProjectStyle";
 const Projects = () => {
 
-    const projects: Project[] = projectsData;
+    const works: Work[] = workHistory;
 
     return (
         <StyledProjectContainer>
             <StyledOrderedList>
-                {projects.map((project, index) => (
+                {works.map((work, index) => (
                     <StyledListItem key={index}>
                         <StyledProjectSection>
-                            <StyledProjectTime>{project.year}</StyledProjectTime>
+                            <StyledProjectTime>{work.year}</StyledProjectTime>
                             <StyledWorkTitle>
-                                {project.role}
+                                {work.role}
                                 <StyledList>
                                     <StyledInnerListItem>
-                                        {project.description}
+                                        {work.description}
                                     </StyledInnerListItem>
                                     <StyledListTech>
-                                        {project.technologies.map((tech, techIndex) => (
+                                        {work.technologies.map((tech, techIndex) => (
                                             <StyledTechItem key={techIndex}>
                                                 <StyledTechText>
                                                     {tech}
