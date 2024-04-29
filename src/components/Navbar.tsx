@@ -1,11 +1,14 @@
 import React from "react";
-import {StyledNav, StyledLink, StyledHead, StyledSubHeader, StyledDiv, StyledList, StyledNavbarComponent, StyledListItem, StyledListLink, StyledSocialList, StyledSocialLink, StyledSocialIcon} from "@/styles/navbar/NavbarStyle";
+import Icons from '@components/Icons/icons';
+import {StyledNav, StyledLink, StyledHead, StyledName, StyledSubHeader, StyledDiv, StyledList, StyledNavbarComponent, StyledListItem, StyledListLink, StyledSocialList} from "@/styles/navbar/NavbarStyle";
 
 const Navbar = () => {
     return (
         <StyledNavbarComponent>
             <StyledHead>
-                <StyledLink href="/">Nhan Nguyen</StyledLink>
+                <StyledName>
+                    <StyledLink href="/">Nhan Nguyen</StyledLink>
+                </StyledName>
                 <StyledSubHeader>Software Engineer</StyledSubHeader>
                 <StyledDiv>I build pixel-perfect, engaging, and accessible digital experiences.</StyledDiv>
                 <StyledNav>
@@ -17,9 +20,7 @@ const Navbar = () => {
                 </StyledNav>
             </StyledHead>
             <StyledSocialList>
-                <StyledSocialIcon>
-                    <StyledSocialLink href={"/"}>X</StyledSocialLink>
-                </StyledSocialIcon>
+                <Icons />
             </StyledSocialList>
         </StyledNavbarComponent>
     );

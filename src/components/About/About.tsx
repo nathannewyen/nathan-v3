@@ -7,7 +7,7 @@ const About = () => {
         <Container>
             <StyledAboutContainer>
                 {aboutData.paragraphs.map((paragraph: string, index: number) => (
-                    <StyledParagraph key={index}>
+                    <StyledParagraph key={index} $isFirst={index === 0}>
                         {paragraph}
                     </StyledParagraph>
                 ))}

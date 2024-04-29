@@ -17,10 +17,10 @@ const Container = styled.div`
 const StyledAboutContainer = styled.div`
 `;
 
-const StyledParagraph = styled.p`
-    word-spacing: 0.1rem;
-    line-height: 1.5;
-    margin-top: 1rem;
+const StyledParagraph = styled.p<{ $isFirst: boolean }>`
+  word-spacing: 0.1rem;
+  line-height: 1.5;
+  margin: ${props => props.$isFirst ? '0' : '1rem 0'};
 `
 
 export { Container, StyledAboutContainer, StyledParagraph };

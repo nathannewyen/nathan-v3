@@ -1,19 +1,7 @@
 import styled from 'styled-components';
 import Link from 'next/link'
-
-const StyledNav = styled.nav`
-`;
-
-const StyledSubHeader = styled.div`
-  color: #C5D1EC;
-  font-size: 1.25rem;
-  margin-top: 1rem;
-`;
-
-const StyledHead = styled.div`
-`;
-
 const StyledNavbarComponent = styled.header`
+  box-sizing: border-box;
   @media (min-width: 1024px) {
     padding: 6rem 0;
     justify-content: space-between;
@@ -25,12 +13,24 @@ const StyledNavbarComponent = styled.header`
     position: sticky;
   }
 `;
-
-const StyledLink = styled(Link)`
-  color: #C5D1EC;
-  text-decoration: none;
+const StyledHead = styled.div`
+`;
+const StyledName = styled.h1`
   font-size: 3rem;
-  font-weight: bold;
+  line-height: 1;
+  color: #C5D1EC;
+`;
+const StyledNav = styled.nav`
+`;
+
+const StyledSubHeader = styled.div`
+  color: #C5D1EC;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+`;
+const StyledLink = styled(Link)`
+  text-decoration: none;
+    color: #C5D1EC;
 `;
 
 const StyledDiv = styled.div`
@@ -54,15 +54,11 @@ const StyledListLink = styled(Link)`
 `;
 
 const StyledSocialList = styled.ul`
-  position: fixed; // or you can use 'sticky'
+  align-items: center;
+  display: flex;
+  margin: 2rem 0 0 0.25rem;
   bottom: 0;
-  right: 0;
+  padding: 0;
+  list-style: none;
 `
-
-const StyledSocialIcon = styled.li`
-`
-
-const StyledSocialLink = styled(Link)`
-`
-
-export { StyledDiv, StyledHead ,StyledSubHeader,  StyledNav, StyledLink, StyledList, StyledListItem, StyledListLink, StyledNavbarComponent, StyledSocialLink, StyledSocialIcon, StyledSocialList };
+export { StyledDiv, StyledHead, StyledName, StyledSubHeader,  StyledNav, StyledLink, StyledList, StyledListItem, StyledListLink, StyledNavbarComponent, StyledSocialList };
