@@ -11,6 +11,7 @@ html,
     color: #8296BD;
     min-height: 100vh;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
     menu, ol, ul {
@@ -19,7 +20,7 @@ html,
       list-style: none;
     }
 
-    h1 {
+    blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, p, pre{
         margin: 0;
     }
     

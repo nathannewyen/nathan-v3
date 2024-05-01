@@ -4,7 +4,7 @@
     "role": "Software Engineer",
     "company": "Trade Aries",
     "location": "Remote",
-    "description": "Developed a Vue component/package for the TradingView trading terminal, integrating it into existing or new Vue pages. Utilized the TradingView charting library and adhered to their documentation for seamless integration. Ensured real-time communication with the server using TradingView's proprietary API. Implemented the TradeStation API for account management and trade execution within the TradingView terminal. Demonstrated proficiency in Vue, JavaScript, and API integration.",
+    "description": "Integrated TradingView trading terminal with Vue, utilizing charting library and ensuring real-time server communication. Demonstrated proficiency in Vue, JavaScript, and API integration by implementing the TradeStation API for account management and trade execution.",
     "technologies": ["Vue.js", "JavaScript", "TradingView API", "TradeStation API"]
   },
   {
@@ -12,7 +12,7 @@
     "role": "Software Engineer II",
     "company": "JPMorgan Chase",
     "location": "Atlanta, GA",
-    "description": "Developed and maintained a web application using ReactJS, Redux, Java, and Spring Boot for real-time financial data monitoring and analysis. Implemented new features with TypeScript, GraphQL, and SPA concepts to enhance user experience and performance. Ensured accessibility compliance, performed rigorous testing with Jest, and managed deployments using AWS cloud services.",
+    "description": "Developed a real-time financial data monitoring and analysis web app with ReactJS, Redux, Java, and Spring Boot. Enhanced user experience and performance using TypeScript, GraphQL, and SPA concepts. Ensured accessibility compliance, performed rigorous testing with Jest, and managed AWS cloud service deployments.",
     "technologies": ["ReactJS", "Redux", "Java", "Spring Boot", "TypeScript", "GraphQL", "AWS", "Jest", "CI/CD tools"]
   },
   {

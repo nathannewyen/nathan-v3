@@ -12,7 +12,12 @@ import {
     StyledWorkTitle,
     StyledListTech,
     StyledTechItem,
-    StyledTechText
+    StyledTechText,
+    StyledH3,
+    StyledDiv,
+    StyledListLink,
+    StyledShadowBox,
+    StyledBoxShadowHidden
 } from "@styles/projects/ProjectStyle";
 const Projects = () => {
 
@@ -24,9 +29,17 @@ const Projects = () => {
                 {works.map((work, index) => (
                     <StyledListItem key={index}>
                         <StyledProjectSection>
+                            <StyledShadowBox />
                             <StyledProjectTime>{work.year}</StyledProjectTime>
                             <StyledWorkTitle>
-                                {work.role}
+                                <StyledH3>
+                                    <StyledDiv>
+                                        <StyledListLink href={"/"}>
+                                            {/*<StyledBoxShadowHidden />*/}
+                                            {work.role}
+                                        </StyledListLink>
+                                    </StyledDiv>
+                                </StyledH3>
                                 <StyledList>
                                     <StyledInnerListItem>
                                         {work.description}

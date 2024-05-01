@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Link from "next/link";
 
 const Container = styled.div`
   scroll-margin-top: 4rem;
@@ -17,10 +18,21 @@ const Container = styled.div`
 const StyledAboutContainer = styled.div`
 `;
 
+const StyledContactMe = styled(Link)`
+  color:  #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+  
+`;
 const StyledParagraph = styled.p<{ $isFirst: boolean }>`
   word-spacing: 0.1rem;
   line-height: 1.5;
   margin: ${props => props.$isFirst ? '0' : '1rem 0'};
 `
 
-export { Container, StyledAboutContainer, StyledParagraph };
+export { Container, StyledAboutContainer, StyledParagraph, StyledContactMe };

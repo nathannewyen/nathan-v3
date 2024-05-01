@@ -1,21 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import Icons from '@components/Icons/icons';
-import {StyledNav, StyledLink, StyledHead, StyledName, StyledSubHeader, StyledDiv, StyledList, StyledNavbarComponent, StyledListItem, StyledListLink, StyledSocialList} from "@/styles/navbar/NavbarStyle";
+import personal from "@data/personal.json";
+import navbarData from "@data/navbar.json";
+import {StyledNav, StyledLink, StyledHead, StyledName, StyledSubHeader, StyledDiv, StyledList, StyledNavbarComponent, StyledListItem, StyledListLink, StyledSocialList, NavIndicator} from "@/styles/navbar/NavbarStyle";
 
 const Navbar = () => {
+    const [focusedLink, setFocusedLink] = useState(navbarData.links[0].name); // Initialize state to the first link
+
     return (
         <StyledNavbarComponent>
             <StyledHead>
                 <StyledName>
-                    <StyledLink href="/">Nhan Nguyen</StyledLink>
+                    <StyledLink href="/">{personal.name}</StyledLink>
                 </StyledName>
-                <StyledSubHeader>Software Engineer</StyledSubHeader>
-                <StyledDiv>I build pixel-perfect, engaging, and accessible digital experiences.</StyledDiv>
+                <StyledSubHeader>{personal.jobTitle}</StyledSubHeader>
+                <StyledDiv>{personal.description}</StyledDiv>
                 <StyledNav>
                     <StyledList>
-                        <StyledListItem><StyledListLink href="#about">About</StyledListLink></StyledListItem>
-                        <StyledListItem><StyledListLink href="#experience">Experience</StyledListLink></StyledListItem>
-                        <StyledListItem><StyledListLink href="#projects">Projects</StyledListLink></StyledListItem>
+                        {navbarData.links.map((link, index) => (
+                            <StyledListItem key={index}>
+                                <StyledListLink
+                                    href={link.url}
+                                    className={link.name === focusedLink ? 'focused' : ''}
+                                    onClick={() => setFocusedLink(link.name)}
+                                >
+                                    <NavIndicator></NavIndicator>
+                                    {link.name}
+                                </StyledListLink>
+                            </StyledListItem>
+                        ))}
                     </StyledList>
                 </StyledNav>
             </StyledHead>
