@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import styled from 'styled-components';
+import { StyledIcon } from '@components/Icons/arrow';
 
-const StyledProjectContainer = styled.div`
+const StyledExperienceContainer = styled.div`
 `;
 
 const StyledOrderedList = styled.ol`
@@ -14,40 +15,34 @@ const StyledShadowBox = styled.div`
   bottom: -1rem;
   left: -1rem;
   right: -1rem;
-  z-index: 100;
+  z-index: 0;
   border-radius: 0.375rem;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 
-  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, opacity, visibility;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
-  transition-duration: .15s;
-
-  @media (prefers-reduced-motion: no-preference) {
-    transition-property: background-color, box-shadow;
-  }
+  transition-duration: .25s;
 
   @media (min-width: 1024px) {
     top: -1.5rem;
     bottom: -1.5rem;
     left: -1.5rem;
     right: -1.5rem;
-
-    &:hover {
-      background-color: rgba(31, 41, 55, 0.5);
-      box-shadow: inset 0 1px 0 0 rgba(148,163,184,0.1), 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
-    }
   }
 `;
-const StyledProjectSection = styled.div`
+const StyledExperienceSection = styled.div`
   position: relative;
   display: grid;
   padding-bottom: 0.25rem;
-  transition: all 0.15s cubic-bezier(.4,0,.2,1);
 
   &:hover ${StyledShadowBox} {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(31, 41, 55, 0.5);
+    box-shadow: inset 0 1px 0 0 rgba(148,163,184,0.1), 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
   }
-  
+
   @media (min-width: 640px) {
     gap: 2rem;
     grid-template-columns: repeat(8 ,minmax(0, 1fr));
@@ -57,7 +52,7 @@ const StyledProjectSection = styled.div`
     gap: 1rem;
   }
 `;
-const StyledProjectTime = styled.header`
+const StyledExperienceTime = styled.header`
   position: relative;
   z-index: 10;
   margin-bottom: 0.5rem;
@@ -95,35 +90,23 @@ const StyledWorkTitle = styled.div`
 const StyledH3 = styled.h3`
   color: rgb(226 232 240);
   font-weight: 500;
+  font-size: 1rem;
 `
 const StyledDiv = styled.div`
+  display: flex;
+  align-items: center;
 `;
-const StyledListLink = styled(Link)`
+const StyledLink = styled(Link)`
   font-size: 1rem;
   display: inline-flex;
   align-items: baseline;
-  color: rgb(226 232 240);
+  color: inherit;
   text-decoration: none;
-`;
-const StyledBoxShadowHidden = styled.span`
-  border-radius: 0.25rem;
-  top: -0.625rem;
-  bottom: -0.625rem;
-  left: -1rem;
-  right: -1rem;
-  position: absolute;
-  display: none;
-  
-    @media (min-width: 768px) {
-      top: -1rem;
-      bottom: -1rem;
-      left: -1.5rem;
-      right: -1.5rem;
+  &:hover {
+    ${StyledIcon} {
+      transform: translate(1.5px, -1px);
     }
-  
-    @media (min-width: 1024px) {
-        display: block;
-    };
+  }
 `;
 const StyledList = styled.ul`
   padding-left: 0;
@@ -152,7 +135,7 @@ const StyledTechText = styled.div`
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 1.25rem;
-  color: #5EEAD4;
+  color: rgb(94 234 212);
 `
 
-export { StyledProjectContainer, StyledOrderedList, StyledProjectSection, StyledList, StyledListItem, StyledInnerListItem,StyledProjectTime, StyledWorkTitle, StyledListLink, StyledListTech, StyledTechItem, StyledTechText, StyledH3, StyledDiv, StyledBoxShadowHidden, StyledShadowBox };
+export { StyledExperienceContainer, StyledOrderedList, StyledExperienceSection, StyledList, StyledListItem, StyledInnerListItem,StyledExperienceTime, StyledWorkTitle, StyledLink, StyledListTech, StyledTechItem, StyledTechText, StyledH3, StyledDiv, StyledShadowBox };
