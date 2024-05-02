@@ -1,11 +1,12 @@
 [
   {
-    "year": "2024 - Present",
-    "role": "Software Engineer",
+    "year": "2024 - 2024",
+    "role": "Software Engineer Co-op",
     "company": "Trade Aries",
     "location": "Remote",
     "description": "Integrated TradingView trading terminal with Vue, utilizing charting library and ensuring real-time server communication. Demonstrated proficiency in Vue, JavaScript, and API integration by implementing the TradeStation API for account management and trade execution.",
-    "technologies": ["Vue.js", "JavaScript", "TradingView API", "TradeStation API"]
+    "technologies": ["Vue.js", "JavaScript", "TradingView API", "TradeStation API"],
+    "link": "https://tradearies.com/"
   },
   {
     "year": "2023 — Present",
@@ -13,7 +14,8 @@
     "company": "JPMorgan Chase",
     "location": "Atlanta, GA",
     "description": "Developed a real-time financial data monitoring and analysis web app with ReactJS, Redux, Java, and Spring Boot. Enhanced user experience and performance using TypeScript, GraphQL, and SPA concepts. Ensured accessibility compliance, performed rigorous testing with Jest, and managed AWS cloud service deployments.",
-    "technologies": ["ReactJS", "Redux", "Java", "Spring Boot", "TypeScript", "GraphQL", "AWS", "Jest", "CI/CD tools"]
+    "technologies": ["ReactJS", "Redux", "Java", "Spring Boot", "TypeScript", "GraphQL", "AWS", "Jest", "CI/CD tools"],
+    "link": "https://www.jpmorganchase.com/"
   },
   {
     "year": "2022 — 2023",
@@ -21,7 +23,8 @@
     "company": "Hawk Ridge System",
     "location": "Remote",
     "description": "Built a new headless frontend using PWA and React, integrated TailwindCSS and Material-UI for design. Managed third-party integrations and implemented CI/CD processes with CircleCI. Collaborated with teams across engineering and design to maintain code quality through regular reviews.",
-    "technologies": ["PWA", "React", "TailwindCSS", "Material-UI", "CircleCI"]
+    "technologies": ["PWA", "React", "TailwindCSS", "Material-UI", "CircleCI"],
+    "link": "https://www.hawkridgesys.com/"
   },
   {
     "year": "June — Dec 2022",
@@ -29,15 +32,17 @@
     "company": "Noorisher",
     "location": "Remote",
     "description": "Engineered major features for a customer-facing mobile app using React Native and AWS Amplify. Implemented scalable cloud solutions and optimized performance-critical app features, improving user engagement by 30% and reducing manual testing time by 50% with automated testing frameworks.",
-    "technologies": ["React Native", "AWS", "AWS Amplify", "Jest", "Detox"]
+    "technologies": ["React Native", "AWS", "AWS Amplify", "Jest", "Detox"],
+    "link": "https://noorisher.com/"
   },
   {
     "year": "2021 — 2022",
-    "role": "Software Engineer",
+    "role": "Developer",
     "company": "Collaborative Mind",
     "location": "Remote",
     "description": "Developed modern, robust code across a variety of languages and frameworks for both client and internal projects. Implemented a GraphQL API with Apollo and a custom caching strategy using Redis, improving response times and performance.",
-    "technologies": ["JavaScript", "TypeScript", "React", "Node.js", "GraphQL", "Apollo", "Redis"]
+    "technologies": ["JavaScript", "TypeScript", "React", "Node.js", "GraphQL", "Apollo", "Redis"],
+    "link": "https://www.cmindllc.com/"
   },
   {
     "year": "2019 — 2020",
@@ -45,6 +50,7 @@
     "company": "Namma",
     "location": "Remote",
     "description": "Architected and implemented the front-end for Namma's web-based applications, including a Facebook Messenger extension and a web player widget. Collaborated with design teams to establish a consistent visual language and optimized web performance significantly.",
-    "technologies": ["HTML", "CSS", "JavaScript"]
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "link": "https://namma.co/"
   }
 ]

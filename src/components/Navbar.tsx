@@ -4,8 +4,7 @@ import personal from "@data/personal.json";
 import navbarData from "@data/navbar.json";
 import {StyledNav, StyledLink, StyledHead, StyledName, StyledSubHeader, StyledDiv, StyledList, StyledNavbarComponent, StyledListItem, StyledListLink, StyledSocialList, NavIndicator} from "@/styles/navbar/NavbarStyle";
 
-const Navbar = () => {
-    const [focusedLink, setFocusedLink] = useState(navbarData.links[0].name); // Initialize state to the first link
+const Navbar = ({ currentSection, setCurrentSection }: any) => {
 
     return (
         <StyledNavbarComponent>
@@ -21,10 +20,10 @@ const Navbar = () => {
                             <StyledListItem key={index}>
                                 <StyledListLink
                                     href={link.url}
-                                    className={link.name === focusedLink ? 'focused' : ''}
-                                    onClick={() => setFocusedLink(link.name)}
+                                    className={link.name.toLowerCase() === currentSection ? 'focused' : ''}
+                                    onClick={() => setCurrentSection(link.name)}
                                 >
-                                    <NavIndicator></NavIndicator>
+                                    {currentSection && <NavIndicator />}
                                     {link.name}
                                 </StyledListLink>
                             </StyledListItem>

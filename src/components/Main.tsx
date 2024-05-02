@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./About/About";
-import Projects from "./Projects/Projects";
+import Experiences from "@components/Experiences/Experiences";
+import Projects from "@components/Projects/Projects";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -8,11 +9,12 @@ const Container = styled.div`
   width: 50%;
 `
 
-const Main = () => {
+const Main = ({ sectionRefs }: any) => {
     return (
         <Container>
-            <About />
-            <Projects />
+            <About ref={sectionRefs['About']} />
+            <Experiences ref={sectionRefs["Experience"]} />
+            <Projects  />
         </Container>
     );
 }

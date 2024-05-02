@@ -1,5 +1,5 @@
 import React from "react";
-import ArrowUp from "@components/Icons/arrow";
+import { ArrowUp } from "@components/Icons/arrow";
 import { StyledButtonContainer, StyledButton } from "@styles/button/ButtonStyle";
 
 const Button = () => {

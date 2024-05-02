@@ -3,6 +3,17 @@ import styled from 'styled-components';
 import { StyledIcon } from '@components/Icons/arrow';
 
 const StyledExperienceContainer = styled.div`
+  margin-bottom: 4rem;
+  
+    @media (min-width: 768px) {
+        scroll-margin-top: 6rem;
+      margin-bottom: 6rem;
+    }
+  
+    @media (min-width: 1024px) {
+        scroll-margin-top: 6rem;
+        margin-bottom: 9rem;
+    }
 `;
 
 const StyledOrderedList = styled.ol`
@@ -104,7 +115,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   &:hover {
     ${StyledIcon} {
-      transform: translate(1.5px, -1px);
+      transform: translate(3px, -2px);
     }
   }
 `;
@@ -138,4 +149,38 @@ const StyledTechText = styled.div`
   color: rgb(94 234 212);
 `
 
-export { StyledExperienceContainer, StyledOrderedList, StyledExperienceSection, StyledList, StyledListItem, StyledInnerListItem,StyledExperienceTime, StyledWorkTitle, StyledLink, StyledListTech, StyledTechItem, StyledTechText, StyledH3, StyledDiv, StyledShadowBox };
+const StyledDivResume = styled.div`
+  margin-top: 3rem;
+`
+
+const StyledLinkResume = styled(Link)`
+  color: rgb(226 232 240);
+  font-weight: 600;
+  font-size: 1rem;
+  align-items: center;
+  display: inline-flex;
+  text-decoration: none;
+
+  &:hover {
+    ${StyledIcon} {
+      transform: translate(3px, -2px);
+    }
+  }
+`
+
+const StyledFillButton = styled.div`
+  display: inline-block;
+  margin-left: 10px;
+  width: 40px;
+  cursor: pointer;
+  background-color: rgb(255, 128, 21);
+  padding: 2px 6px 2px 2px;
+`
+
+const StyledImageIcon = styled.img`
+  background: none;
+  vertical-align: middle;
+  max-width: 100%;
+`
+
+export { StyledExperienceContainer, StyledOrderedList, StyledExperienceSection, StyledList, StyledListItem, StyledInnerListItem,StyledExperienceTime, StyledWorkTitle, StyledLink, StyledListTech, StyledTechItem, StyledTechText, StyledH3, StyledDiv, StyledShadowBox, StyledDivResume, StyledLinkResume, StyledFillButton, StyledImageIcon };
