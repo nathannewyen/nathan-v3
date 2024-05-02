@@ -1,3 +1,5 @@
+![Screenshot 2024-05-02 152126](https://github.com/nathannewyen/nathan-v3/assets/21167307/e185e306-1dec-44c2-9846-0506b8e64867)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
