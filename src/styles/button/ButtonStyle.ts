@@ -10,7 +10,17 @@ const StyledButton = styled.button`
   display: inline-flex;
   background-color: transparent;
   border: none;
-  color: #ffffff;
-`
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+  cursor: pointer;
+  &.visible {
+    opacity: 1;
+  }
+`;
 
-export { StyledButtonContainer, StyledButton };
+const StyledImage = styled.img<{ src: string }>`
+    width: 100px;
+    height: 86px;
+`;
+
+export { StyledButtonContainer, StyledButton, StyledImage };

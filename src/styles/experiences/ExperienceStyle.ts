@@ -73,7 +73,7 @@ const StyledExperienceTime = styled.header`
   text-transform: uppercase;
   letter-spacing: 0.025em;
   line-height: 1rem;
-  color: #4a5568;
+  color: rgb(100 116 139);
 
   @media (min-width: 640px) {
     grid-column: span 2 / span 2;
@@ -82,9 +82,16 @@ const StyledExperienceTime = styled.header`
 const StyledListItem = styled.li`
   margin-bottom: 3rem;
   list-style-type: none;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+
+  &:hover ~ & { 
+    opacity: 0.5;
+  }
 `;
 
 const StyledInnerListItem = styled.p`
+    color: rgb(148 163 184);
     margin-top: 0.5rem;
     font-size: 0.875rem;
     line-height: 1.5rem;
@@ -160,8 +167,10 @@ const StyledLinkResume = styled(Link)`
   align-items: center;
   display: inline-flex;
   text-decoration: none;
+  transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
+    color: rgb(94 234 212);
     ${StyledIcon} {
       transform: translate(3px, -2px);
     }

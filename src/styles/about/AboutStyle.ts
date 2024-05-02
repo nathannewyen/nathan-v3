@@ -4,6 +4,7 @@ import Link from "next/link";
 const Container = styled.div`
   scroll-margin-top: 4rem;
   margin-bottom: 4rem;
+  font-size: 1rem;
   
     @media (min-width: 768px) {
       margin-bottom: 6rem;
@@ -19,7 +20,7 @@ const StyledAboutContainer = styled.div`
 `;
 
 const StyledContactMe = styled(Link)`
-  color:  #ffffff;
+  color:  rgb(226 232 240);
   text-decoration: none;
   font-weight: 500;
   cursor: pointer;
@@ -30,6 +31,7 @@ const StyledContactMe = styled(Link)`
   
 `;
 const StyledParagraph = styled.p<{ $isFirst: boolean }>`
+  color: rgb(148 163 184);
   word-spacing: 0.1rem;
   line-height: 1.5;
   margin: ${props => props.$isFirst ? '0' : '1rem 0'};

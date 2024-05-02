@@ -42,7 +42,7 @@ const StyledLink = styled(Link)`
 `;
 
 const StyledDiv = styled.p`
-    color: #8296BD;
+    color: rgb(148 163 184);
     max-width: 20rem;
     margin-top: 1rem;
 `;

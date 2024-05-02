@@ -1,4 +1,4 @@
-import React, {forwardRef} from "react";
+import React, {forwardRef, useState} from "react";
 import workHistory from "@data/works.json";
 import { Work } from "@/types/project.type";
 import { ArrowUpRight } from "@components/Icons/arrow";
@@ -26,13 +26,18 @@ import {
 
 const Experiences = forwardRef<HTMLDivElement>((props, ref) => {
     const works: Work[] = workHistory;
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     return (
         <StyledExperienceContainer id="experience" ref={ref}>
             <StyledOrderedList>
                 {works.map((work, index) => (
                     <StyledLink key={index} href={work.link} target="_blank" rel="noopener noreferrer">
-                        <StyledListItem>
+                        <StyledListItem
+                            style={{opacity: hoveredIndex === null || hoveredIndex === index ? 1 : 0.5}}
+                            onMouseEnter={() => setHoveredIndex(index)}
+                            onMouseLeave={() => setHoveredIndex(null)}
+                        >
                                 <StyledExperienceSection>
                                     <StyledShadowBox/>
                                     <StyledExperienceTime>{work.year}</StyledExperienceTime>
@@ -67,7 +72,7 @@ const Experiences = forwardRef<HTMLDivElement>((props, ref) => {
                 <StyledLinkResume href="/static/resume.pdf" target="_blank" rel="noopener noreferrer">
                     View Full Résumé <ArrowUpRight/>
                 </StyledLinkResume>
-                {Array(4).fill(null).map((_, index) => (
+                {Array(0).fill(null).map((_, index) => (
                     <StyledFillButton key={index}>
                         <StyledImageIcon src="chrome-extension://gphandlahdpffmccakmbngmbjnjiiahp/img/icon-fill.png" />
                     </StyledFillButton>

@@ -19,7 +19,7 @@
   },
   {
     "year": "2022 — 2023",
-    "role": "Software Engineer",
+    "role": "Engineer",
     "company": "Hawk Ridge System",
     "location": "Remote",
     "description": "Built a new headless frontend using PWA and React, integrated TailwindCSS and Material-UI for design. Managed third-party integrations and implemented CI/CD processes with CircleCI. Collaborated with teams across engineering and design to maintain code quality through regular reviews.",

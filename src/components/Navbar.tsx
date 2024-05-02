@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Icons from '@components/Icons/icons';
 import personal from "@data/personal.json";
 import navbarData from "@data/navbar.json";
