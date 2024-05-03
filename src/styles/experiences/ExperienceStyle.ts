@@ -192,4 +192,26 @@ const StyledImageIcon = styled.img`
   max-width: 100%;
 `
 
-export { StyledExperienceContainer, StyledOrderedList, StyledExperienceSection, StyledList, StyledListItem, StyledInnerListItem,StyledExperienceTime, StyledWorkTitle, StyledLink, StyledListTech, StyledTechItem, StyledTechText, StyledH3, StyledDiv, StyledShadowBox, StyledDivResume, StyledLinkResume, StyledFillButton, StyledImageIcon };
+const StyledH2 = styled.h2`
+  @media (min-width: 1024px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  margin-bottom: 1rem;
+  padding: 1.5rem 0;
+  color: rgb(226 232 240);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+`;
+
+export { StyledExperienceContainer, StyledOrderedList, StyledExperienceSection, StyledList, StyledListItem, StyledInnerListItem,StyledExperienceTime, StyledWorkTitle, StyledLink, StyledListTech, StyledTechItem, StyledTechText, StyledH3, StyledDiv, StyledShadowBox, StyledDivResume, StyledLinkResume, StyledFillButton, StyledImageIcon, StyledH2 };

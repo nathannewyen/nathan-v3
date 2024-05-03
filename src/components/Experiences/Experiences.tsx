@@ -21,7 +21,8 @@ import {
     StyledDivResume,
     StyledLinkResume,
     StyledFillButton,
-    StyledImageIcon
+    StyledImageIcon,
+    StyledH2
 } from "@styles/experiences/ExperienceStyle";
 
 const Experiences = forwardRef<HTMLDivElement>((props, ref) => {
@@ -30,6 +31,7 @@ const Experiences = forwardRef<HTMLDivElement>((props, ref) => {
 
     return (
         <StyledExperienceContainer id="experience" ref={ref}>
+            <StyledH2>Experience</StyledH2>
             <StyledOrderedList>
                 {works.map((work, index) => (
                     <StyledLink key={index} href={work.link} target="_blank" rel="noopener noreferrer">

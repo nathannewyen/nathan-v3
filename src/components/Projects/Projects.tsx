@@ -15,6 +15,7 @@ import {
     StyledListTech,
     StyledTechText,
     StyledTechItem,
+    StyledH2,
 } from "@styles/projects/ProjectStyle";
 import { ArrowUpRight } from "@components/Icons/arrow";
 
@@ -75,6 +76,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
 
     return (
         <StyledProjectContainer id={"project"} ref={ref}>
+            <StyledH2>Projects</StyledH2>
             <StyledProjectSection>
                 <StyledProjectList>
                     {repos.map((repo, index) => (

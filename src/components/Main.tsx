@@ -6,8 +6,12 @@ import Footer from "@components/Footer/Footer";
 import styled from "styled-components";
 
 const Container = styled.div`
-  padding: 6rem 0;
-  width: 50%;
+  @media (min-width: 1024px) {
+    padding: 6rem 0;
+    width: 50%;
+  }
+  
+  padding-top: 6rem;
 `
 
 const Main = ({ sectionRefs }: any) => {

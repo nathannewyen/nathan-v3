@@ -33,6 +33,7 @@ const StyledProject = styled.div`
   position: relative;
   display: grid;
   padding-bottom: 0.25rem;
+  gap: 1rem;
 
   @media (min-width: 640px) {
     gap: 2rem;
@@ -75,7 +76,14 @@ const StyledProjectImg = styled.img`
   border-radius: 0.25rem;
   z-index: 1;
   transition: border-color .25s cubic-bezier(.4,0,.2,1);
-  
+  width: 120px;
+  height: 65px;
+
+  @media (max-width: 639px) {
+    width: 200px;
+    height: 110px;
+  }
+
   @media (min-width: 640px) {
     order: 1;
     grid-column: span 2 / span 2;
@@ -164,4 +172,26 @@ const StyledTechText = styled.div`
   color: rgb(94 234 212);
 `
 
-export { StyledProjectContainer, StyledProjectSection, StyledProjectList, StyledProjectListItem, StyledProject, StyledShadowBox, StyledProjectImg, StyledProjectContent, StyledProjectName, StyledProjectDesc, StyledProjectLink, StyledSpan, StyledListTech, StyledTechItem, StyledTechText }
+const StyledH2 = styled.h2`
+  @media (min-width: 1024px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  margin-bottom: 1rem;
+  padding: 1.5rem 0;
+  color: rgb(226 232 240);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+`;
+
+export { StyledProjectContainer, StyledProjectSection, StyledProjectList, StyledProjectListItem, StyledProject, StyledShadowBox, StyledProjectImg, StyledProjectContent, StyledProjectName, StyledProjectDesc, StyledProjectLink, StyledSpan, StyledListTech, StyledTechItem, StyledTechText, StyledH2 }

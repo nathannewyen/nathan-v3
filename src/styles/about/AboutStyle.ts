@@ -30,6 +30,27 @@ const StyledContactMe = styled(Link)`
   }
   
 `;
+const StyledH2 = styled.h2`
+  @media (min-width: 1024px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  margin-bottom: 1rem;
+  padding: 1.5rem 0;
+  color: rgb(226 232 240);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+`;
 const StyledParagraph = styled.p<{ $isFirst: boolean }>`
   color: rgb(148 163 184);
   word-spacing: 0.1rem;
@@ -37,4 +58,4 @@ const StyledParagraph = styled.p<{ $isFirst: boolean }>`
   margin: ${props => props.$isFirst ? '0' : '1rem 0'};
 `
 
-export { Container, StyledAboutContainer, StyledParagraph, StyledContactMe };
+export { Container, StyledAboutContainer, StyledParagraph, StyledContactMe, StyledH2 };
