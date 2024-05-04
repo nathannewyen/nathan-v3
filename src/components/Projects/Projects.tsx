@@ -80,39 +80,38 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
             <StyledProjectSection>
                 <StyledProjectList>
                     {repos.map((repo, index) => (
-                        <StyledProjectListItem
-                            key={index}
-                            style={{opacity: hoveredIndex === null || hoveredIndex === index ? 1 : 0.5}}
-                            onMouseEnter={() => setHoveredIndex(index)}
-                            onMouseLeave={() => setHoveredIndex(null)}
-                        >
-                            <StyledProjectLink href={repo.html_url} target="_blank" rel="noopener noreferrer">
-                                <StyledProject>
-                                    <StyledShadowBox/>
-                                    <StyledProjectContent>
-                                        <StyledProjectName>
-                                                {repo.displayName}
-                                                <StyledSpan>
-                                                    <ArrowUpRight/>
-                                                </StyledSpan>
-                                        </StyledProjectName>
-                                        <StyledProjectDesc>
-                                            {repo.description}
-                                        </StyledProjectDesc>
-                                        <StyledListTech>
-                                            {repo.topics.map((tech: any, techIndex: number) => (
-                                                <StyledTechItem key={techIndex}>
-                                                    <StyledTechText>
-                                                        {tech}
-                                                    </StyledTechText>
-                                                </StyledTechItem>
-                                            ))}
-                                        </StyledListTech>
-                                    </StyledProjectContent>
-                                    <StyledProjectImg width={120} height={65} src={repo.imageUrl}/>
-                                </StyledProject>
-                            </StyledProjectLink>
-                        </StyledProjectListItem>
+                        <StyledProjectLink key={index} href={repo.html_url} target="_blank" rel="noopener noreferrer">
+                            <StyledProjectListItem
+                                style={{opacity: hoveredIndex === null || hoveredIndex === index ? 1 : 0.5}}
+                                onMouseEnter={() => setHoveredIndex(index)}
+                                onMouseLeave={() => setHoveredIndex(null)}
+                            >
+                                    <StyledProject>
+                                        <StyledShadowBox/>
+                                        <StyledProjectContent>
+                                            <StyledProjectName>
+                                                    {repo.displayName}
+                                                    <StyledSpan>
+                                                        <ArrowUpRight/>
+                                                    </StyledSpan>
+                                            </StyledProjectName>
+                                            <StyledProjectDesc>
+                                                {repo.description}
+                                            </StyledProjectDesc>
+                                            <StyledListTech>
+                                                {repo.topics.map((tech: any, techIndex: number) => (
+                                                    <StyledTechItem key={techIndex}>
+                                                        <StyledTechText>
+                                                            {tech}
+                                                        </StyledTechText>
+                                                    </StyledTechItem>
+                                                ))}
+                                            </StyledListTech>
+                                        </StyledProjectContent>
+                                        <StyledProjectImg width={120} height={65} src={repo.imageUrl}/>
+                                    </StyledProject>
+                            </StyledProjectListItem>
+                        </StyledProjectLink>
                     ))}
                 </StyledProjectList>
             </StyledProjectSection>

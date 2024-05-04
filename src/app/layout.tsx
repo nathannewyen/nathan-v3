@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import type { Metadata } from "next";
 import StyledComponentsRegistry from '../lib/registry'
 import GlobalStyle from '@/styles/GlobalStyle';
+import GradientCircle from "@components/GradientCircle/GradientCircle";
 
 export const metadata: Metadata = {
   title: "Nhan Nguyen",
@@ -13,11 +14,15 @@ export default function RootLayout({
 }: Readonly<{
   children: ReactNode;
 }>) {
+
   return (
       <html>
         <body>
             <GlobalStyle />
-            <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+            <StyledComponentsRegistry>
+                <GradientCircle />
+                {children}
+            </StyledComponentsRegistry>
         </body>
       </html>
   );

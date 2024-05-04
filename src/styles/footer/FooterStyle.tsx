@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Link from 'next/link';
 
 const StyledFooterContainer = styled.footer`
+  padding-bottom: 4rem;
   color: rgb(100 116 139);
   font-size: 0.875rem;
   line-height: 1.25rem;

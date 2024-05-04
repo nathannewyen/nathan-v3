@@ -76,13 +76,6 @@ const StyledProjectImg = styled.img`
   border-radius: 0.25rem;
   z-index: 1;
   transition: border-color .25s cubic-bezier(.4,0,.2,1);
-  width: 120px;
-  height: 65px;
-
-  @media (max-width: 639px) {
-    width: 200px;
-    height: 110px;
-  }
 
   @media (min-width: 640px) {
     order: 1;
@@ -92,15 +85,16 @@ const StyledProjectImg = styled.img`
 
 const StyledProjectContent = styled.div`
   z-index: 10;
-  
   @media (min-width: 640px) {
     grid-column: span 6 / span 6;
+    grid-column-end: span 6; // Add this line
     order: 2;
   }
 `;
 
 const StyledProjectName = styled.h3`
   color: rgb(226 232 240);
+  font-size: 1rem;
 `;
 const StyledSpan = styled.span`
   display: inline-block;
@@ -116,7 +110,7 @@ const StyledProjectLink = styled(Link)`
   font-weight: 500;
   font-size: 1rem;
   align-items: center;
-  display: inline-flex;
+  display: block;
   text-decoration: none;
 
   &:hover ${StyledShadowBox} {

@@ -13,6 +13,8 @@ const StyledButton = styled.button`
   opacity: 0;
   transition: opacity 0.15s ease-in-out;
   cursor: pointer;
+  padding: 1rem 0.5rem;
+  align-items: center;
   &.visible {
     opacity: 1;
   }
