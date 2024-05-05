@@ -64,20 +64,12 @@ export const ArchiveStyleTable = styled.table`
 `
 
 export const ArchiveStyleThead = styled.thead`
-  padding: 1.25rem 1.5rem;
-  border-color: rgba(203,213,225,.1);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  z-index: 10;
-  top: 0;
   position: sticky;
-
-  @media (max-width: 768px) {
-    &:nth-child(3), &:nth-child(4) {
-      display: none;
-    }
-  }
-`
+  top: 0;
+  background: inherit;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+`;
 export const ArchiveStyleTr = styled.tr`
   border-color: rgba(203,213,225,.1);
   border-bottom-width: 1px;
@@ -140,6 +132,7 @@ export const ArchiveStyleTdName = styled.td`
 
 export const ArchiveStyleTdLink = styled(Link)`
   color: rgb(226 232 240);
+  font-weight: 500;
   align-items: center;
   display: inline-flex;
   text-decoration: none;
