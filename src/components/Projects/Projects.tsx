@@ -16,8 +16,11 @@ import {
     StyledTechText,
     StyledTechItem,
     StyledH2,
+    StyledArchiveLink,
+    StyledArchiveSection,
+    StyledSpanArchive,
 } from "@styles/projects/ProjectStyle";
-import { ArrowUpRight } from "@components/Icons/arrow";
+import { ArrowUpRight, ArrowRight } from "@components/Icons/arrow";
 
 interface Repo {
     displayName: string;
@@ -114,6 +117,14 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
                         </StyledProjectLink>
                     ))}
                 </StyledProjectList>
+                <StyledArchiveSection>
+                    <StyledArchiveLink href="/archive">
+                            <StyledSpanArchive>
+                                View Full Project Archive
+                            </StyledSpanArchive>
+                            <ArrowRight />
+                    </StyledArchiveLink>
+                </StyledArchiveSection>
             </StyledProjectSection>
         </StyledProjectContainer>
     );

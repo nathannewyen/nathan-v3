@@ -13,7 +13,6 @@ html,
     scroll-behavior: smooth;
     position: relative;
   }
-
     menu, ol, ul {
       padding: 0;
       margin: 0;
@@ -31,6 +30,31 @@ html,
     img, video {
       max-width: 100%;
       height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    audio, canvas, embed, iframe, img, object, svg, video {
+      display: block;
+      vertical-align: middle;
+    }
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse;
+    }
+
+    .loading-icon {
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
 `;
 

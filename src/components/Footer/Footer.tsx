@@ -1,4 +1,4 @@
-import { StyledFooterContainer, StyledFooterContent, StyledLink } from '@/styles/footer/FooterStyle';
+import { StyledFooterContainer, StyledFooterContent, StyledLink } from '@styles/footer/FooterStyle';
 const Footer = () => {
     const links = [
         { name: 'Figma', url: 'https://www.figma.com/', text: 'Loosely designed in ' },

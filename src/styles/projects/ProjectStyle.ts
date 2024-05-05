@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Link from "next/link";
+import {StyledArrowRight} from "@components/Icons/arrow";
 
 const StyledProjectContainer = styled.section`
   scroll-margin-top: 4rem;
@@ -18,10 +19,49 @@ const StyledProjectContainer = styled.section`
 const StyledProjectSection = styled.div``;
 
 const StyledProjectList = styled.ul``;
+const StyledArchiveSection = styled.section`
+  margin-top: 3rem;
+`
+const StyledSpanArchive = styled.span`
+  position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.25rem;
+    height: 1px;
+    background: currentColor;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+`;
+const StyledArchiveLink = styled(Link)`
+  position: relative;
+  color: rgb(226 232 240);
+  line-height: 1.25rem;
+  font-weight: 600;
+  align-items: center;
+  display: inline-flex;
+  text-decoration: none;
+
+  &:hover ${StyledArrowRight} {
+    transform: translateX(8px);
+    transition: transform 0.15s cubic-bezier(.4,0,.2,1);
+  }
+
+  &:hover ${StyledSpanArchive}::after {
+    opacity: 1;
+  }
+`
 const StyledProjectListItem = styled.li`
   margin-bottom: 3rem;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.25s ease;
   opacity: 1;
 
   &:hover ~ & {
@@ -188,4 +228,4 @@ const StyledH2 = styled.h2`
   text-transform: uppercase;
 `;
 
-export { StyledProjectContainer, StyledProjectSection, StyledProjectList, StyledProjectListItem, StyledProject, StyledShadowBox, StyledProjectImg, StyledProjectContent, StyledProjectName, StyledProjectDesc, StyledProjectLink, StyledSpan, StyledListTech, StyledTechItem, StyledTechText, StyledH2 }
+export { StyledProjectContainer, StyledProjectSection, StyledProjectList, StyledProjectListItem, StyledProject, StyledShadowBox, StyledProjectImg, StyledProjectContent, StyledProjectName, StyledProjectDesc, StyledProjectLink, StyledSpan, StyledListTech, StyledTechItem, StyledTechText, StyledH2, StyledArchiveSection, StyledArchiveLink, StyledSpanArchive }
