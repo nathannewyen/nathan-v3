@@ -30,9 +30,9 @@ export default function RootLayout({
     children: ReactNode;
 }>) {
     const ogImage = Array.isArray(metadata.openGraph?.images) ? metadata.openGraph.images[0] : undefined;
-    const ogImageUrl = typeof ogImage?.url === 'string' ? ogImage.url : undefined;
+    const ogImageUrl = ogImage && typeof ogImage === 'object' && 'url' in ogImage ? ogImage.url.toString() : undefined;
 
-    // @ts-ignore
+
     return (
         <html>
         <Head>
