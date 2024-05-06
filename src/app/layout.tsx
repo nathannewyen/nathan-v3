@@ -6,8 +6,9 @@ import GlobalStyle from '@/styles/GlobalStyle';
 import GradientCircle from "@components/GradientCircle/GradientCircle";
 
 export const metadata: Metadata = {
-  title: "Nhan Nguyen",
-  description: "This is a Next.js project developed by Nhan Nguyen. It showcases proficiency in JavaScript, TypeScript, React, and npm.",
+     title: "Nhan Nguyen",
+     description: "This is a Next.js project developed by Nhan Nguyen. It showcases proficiency in JavaScript, TypeScript, React, and npm.",
+    metadataBase: new URL('https://nathan-v3.vercel.app/'),
     openGraph: {
         type: 'website',
         locale: 'en_US',
@@ -24,21 +25,27 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+   children,
 }: Readonly<{
-  children: ReactNode;
+    children: ReactNode;
 }>) {
+    const ogImage = Array.isArray(metadata.openGraph?.images) ? metadata.openGraph.images[0] : undefined;
+    const ogImageUrl = typeof ogImage?.url === 'string' ? ogImage.url : undefined;
 
-  return (
-      <html>
+    // @ts-ignore
+    return (
+        <html>
+        <Head>
+            <meta property="og:image" content={ogImageUrl} />
+            <meta name="twitter:card" content="summary_large_image" />
+        </Head>
         <body>
-            <GlobalStyle />
-            <StyledComponentsRegistry>
-                <GradientCircle />
-                {children}
-            </StyledComponentsRegistry>
+        <GlobalStyle />
+        <StyledComponentsRegistry>
+            <GradientCircle />
+            {children}
+        </StyledComponentsRegistry>
         </body>
-      </html>
-  );
+        </html>
+    );
 }
-
