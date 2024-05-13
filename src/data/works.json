@@ -1,11 +1,20 @@
 [
   {
+    "year": "2023 - 2024",
+    "role": "Flutter Engineer",
+    "company": "VibeIRL",
+    "location": "Remote",
+    "description": "Develop and maintain mobile application using Flutter and Dart, ensuring high performance, quality and responsiveness. Actively participated in code reviews, ensuring adherence to best practices and maintaining a high quality codebase.",
+    "technologies": ["Flutter", "Dart", "Android", "iOS"],
+    "link": "https://play.google.com/store/apps/details?id=com.vibeirl.app"
+  },
+  {
     "year": "2024 - 2024",
     "role": "Software Engineer Co-op",
     "company": "Trade Aries",
     "location": "Remote",
     "description": "Integrated TradingView trading terminal with Vue, utilizing charting library and ensuring real-time server communication. Demonstrated proficiency in Vue, JavaScript, and API integration by implementing the TradeStation API for account management and trade execution.",
-    "technologies": ["Vue.js", "JavaScript", "TradingView API", "TradeStation API"],
+    "technologies": ["Vue.js", "JavaScript", "Blockchain", "TradingView API", "TradeStation API"],
     "link": "https://tradearies.com/"
   },
   {
