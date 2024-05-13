@@ -1,17 +1,8 @@
 [
   {
-    "year": "2023 - 2024",
-    "role": "Flutter Engineer",
-    "company": "VibeIRL",
-    "location": "Remote",
-    "description": "Develop and maintain mobile application using Flutter and Dart, ensuring high performance, quality and responsiveness. Actively participated in code reviews, ensuring adherence to best practices and maintaining a high quality codebase.",
-    "technologies": ["Flutter", "Dart", "Android", "iOS"],
-    "link": "https://play.google.com/store/apps/details?id=com.vibeirl.app"
-  },
-  {
     "year": "2024 - 2024",
     "role": "Software Engineer Co-op",
-    "company": "Trade Aries",
+    "company": "Trade Aries · Part-time",
     "location": "Remote",
     "description": "Integrated TradingView trading terminal with Vue, utilizing charting library and ensuring real-time server communication. Demonstrated proficiency in Vue, JavaScript, and API integration by implementing the TradeStation API for account management and trade execution.",
     "technologies": ["Vue.js", "JavaScript", "Blockchain", "TradingView API", "TradeStation API"],
@@ -38,7 +29,7 @@
   {
     "year": "June — Dec 2022",
     "role": "Mobile Developer",
-    "company": "Noorisher",
+    "company": "Noorisher · Part-time",
     "location": "Remote",
     "description": "Engineered major features for a customer-facing mobile app using React Native and AWS Amplify. Implemented scalable cloud solutions and optimized performance-critical app features, improving user engagement by 30% and reducing manual testing time by 50% with automated testing frameworks.",
     "technologies": ["React Native", "AWS", "AWS Amplify", "Jest", "Detox"],
